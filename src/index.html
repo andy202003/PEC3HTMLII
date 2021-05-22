@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="ES">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+        <!-- do not remove this line! -->
+        <title>UOC Boilerplate</title>
+    </head>
+    <body>
+        <header
+            class="
+                flex
+                md:flex-row
+                flex-row-reverse
+                justify-between
+                space-x-4
+                form-indigo-100
+                py-6
+                px-6
+                bg-purple-900
+            "
+        >
+            <div class="md:hidden">
+                <button id="hamburger">
+                    <img
+                        class="toggle block"
+                        src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png"
+                        width="40"
+                        height="40"
+                    />
+                    <img
+                        class="toggle hidden"
+                        src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png"
+                        width="40"
+                        height="40"
+                    />
+                </button>
+            </div>
+            <div>
+                <a href="/"
+                    ><img
+                        class="block"
+                        src="assets/images/guitar.jpg"
+                        alt="The Guitar"
+                /></a>
+            </div>
+
+            <nav class="toggle hidden md:flex w-full md:w-auto text-right">
+                <a class="links" href="integrantes.html">INTEGRANTES</a>
+
+                <a class="links" href="/">PRESENTACIONES</a>
+
+                <a class="links" href="/">CONTACTO</a>
+            </nav>
+        </header>
+
+        <main class="bg-black py-4">
+            <div
+                class="
+                    md:grid
+                    grid-cols-4 grid-flow-row
+                    gap-y-0 gap-x-2.5
+                    p-4
+                    min-h-full
+                "
+            >
+                <div
+                    class="
+                        animate-colorchange
+                        text-white text-9xl
+                        col-start-5 col-end-7
+                        row-start-4 row-end-6
+                        z-0
+                        uppercase
+                        font-bold
+                    "
+                >
+                    Shakut
+                </div>
+
+                <div
+                    class="
+                        col-start-6
+                        row-start-3
+                        bg-yellow
+                        uppercase
+                        object-cover
+                        flex
+                        h-30
+                        w-60
+                    "
+                    data-video="ZvxHsU-OWpk"
+                    data-autoplay="0"
+                    data-loop="1"
+                    id="youtube-audio"
+                >
+                    <div class="py-12 font-sans text-base italic">
+                        Escuchanos
+                    </div>
+                </div>
+                <div class="row-start-2 row-end-5 col-start-2 col-span-4">
+                    <a
+                        href="https://www.flickr.com/photos/45879065@N05/7358625730"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            class="
+                                w-full
+                                h-full
+                                object-cover
+                                block
+                                align-middle
+                            "
+                            src="https://live.staticflickr.com/7219/7358625730_a039137d74_b.jpg"
+                            alt="Angry&Hungry children listen to rock music"
+                        />
+                    </a>
+                </div>
+                <div
+                    class="
+                        text-white
+                        row-start-3 row-end-5
+                        col-start-1 col-end-2
+                        text-base
+                        uppercase
+                    "
+                >
+                    <ul>
+                        <li>
+                            <span class="block font-bold"
+                                >Conocenos el día:</span
+                            >
+                            <span class="block">Marzo 21</span>
+                        </li>
+                        <li class="my-4">
+                            <span class="block font-bold">Lugar:</span>
+                            <span class="block">Parque Bicentenario</span>
+                        </li>
+                        <li class="my-4">
+                            <span class="block font-bold">Hora:</span>
+                            <span class="block"
+                                >Empieza <strong>7:00 PM</strong></span
+                            >
+                            <span class="block"
+                                >Las puertas se abren a las
+                                <strong>6:00 PM</strong></span
+                            >
+                        </li>
+                        <li class="my-4">
+                            <span class="block">Entrada Gratuita</span>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="
+                        text-white
+                        col-start-1 col-end-3
+                        row-start-2 row-end-3
+                        text-right
+                        font-sans
+                        uppercase
+                    "
+                >
+                    <div class="block text-xl">La mejor banda de rock</div>
+                    <div class="text-8xl block font-bold">Shakut</div>
+                </div>
+            </div>
+        </main>
+        <footer class="p-5 bg-purple-800">
+            <nav class="md:flex items-center justify-between w-full">
+                <span class="block"
+                    ><img src="assets/images/guitar.jpg" alt="The Guitar"
+                /></span>
+                <div>
+                    <a class="links" href="/">INICIO</a>
+
+                    <a class="links" href="integrantes.html">INTEGRANTES</a>
+
+                    <a class="links" href="/">PRESENTACIONES</a>
+
+                    <a class="links" href="/">CONTACTO</a>
+                </div>
+                <div class="md:flex my-2">
+                    <i
+                        style="background-color: #3b5998"
+                        class="btn-social fab fa-facebook-f"
+                    ></i>
+
+                    <i
+                        style="background-color: #55acee"
+                        class="btn-social fab fa-twitter"
+                    ></i>
+                    <i
+                        style="background-color: #dd4b39"
+                        class="btn-social fab fa-google"
+                    ></i>
+                </div>
+            </nav>
+        </footer>
+
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <script src="https://cdn.rawgit.com/labnol/files/master/yt.js"></script>
+        <script src="assets/scripts/main.js"></script>
+    </body>
+</html>
