@@ -12,10 +12,12 @@ module.exports = {
         gray: colors.trueGray,
         indigo: colors.indigo,
         red: colors.rose,
-        purple: colors.violet,
 
         yellow: {
           DEFAULT: "#b6c218",
+        },
+        purple: {
+          DEFAULT: "#240c50",
         },
       },
       fontSize: {
@@ -27,7 +29,7 @@ module.exports = {
         xl: "1.25rem",
         "2xl": "1.5rem",
         "3xl": "1.875rem",
-        "4xl": "2.25rem",
+        "4xl": "calc(1.375rem + 1.5vw)",
         "5xl": "3rem",
         "6xl": "4rem",
         "8xl": "max(8vw, 40px)",
@@ -35,6 +37,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Trebuchet MS,Arial,Helvetica,sans-serif"],
+        apple: ["Segoe UI ,Roboto,Helvetica Neue"],
       },
       keyframes: {
         colorchange: {

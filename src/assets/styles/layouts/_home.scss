@@ -1,3 +1,4 @@
+// Clases escritas para la página integrantes//
 * {
   margin: 0;
   padding: 0;
@@ -23,9 +24,9 @@
     15% 85%,
     0% 85%
   );
-  background-color: black;
 }
 
+//componentes extraidos comunes en las dos páginas//
 @layer components {
   .figcaption {
     @apply text-center bg-black text-white italic;
